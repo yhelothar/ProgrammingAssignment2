@@ -1,8 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Stores matrix in a cache and finds the inverse of the matrix
 
-## Write a short comment describing this function
 
+## Creates a list of functions that stores matrix and inverse matrix into cache
+## and functions to return the value of matricies
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL #initializing variable
   set <- function(y) { #function to store matrix into cache
@@ -19,10 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Write a short comment describing this function
-
+## Determines if inverse matrix is in memory, if so, return value, if not, find inverse matrix
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
   m <- x$getsolve()
   if(!is.null(m)) { #checks if value of mean already exists in cache
     message("getting cached data") 
